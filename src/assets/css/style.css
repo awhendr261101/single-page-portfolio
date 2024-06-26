@@ -3,6 +3,9 @@
 /* Universal selector */
 
 /* custom variables */
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* logo  */
 img[alt="logo"]{
@@ -38,4 +41,10 @@ image {
   nav a.router-link-exact-active {
     color: #42b983;
   }
+
+  /* main styling  */
+:is(.wrapper){
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
+}
 
