@@ -44,8 +44,8 @@ export default createStore({
       try {
         const response = await axios.get(portfolioData)
         console.log(response.data);
-        context.commit('setJobtitle', response.data.jobtitle)
-        context.commit('setAbout', response.data.about)
+        context.commit('setJobtitle', response.data.jobTitle)
+        context.commit('setAbout', response.data.About)
         context.commit('setEducation', response.data.education)
         context.commit('setExperience', response.data.experience)
         context.commit('setSkills', response.data.skills)
